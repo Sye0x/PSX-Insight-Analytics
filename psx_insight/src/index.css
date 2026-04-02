@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-subtext: hsl(var(--subtext));
+  --color-icons: hsl(var(--icons));
+  --color-border: hsl(var(--border));
+  --color-card: hsl(var(--card));
+  --color-hover: hsl(var(--hover));
+  --color-buttonbg: hsl(var(--buttonbg));
+}
+
+@layer base {
+  :root {
+    --background: 195, 32%, 93%;
+    --foreground: 197, 95%, 15%;
+    --subtext: 188, 58%, 39%;
+    --border: 200, 75%, 8%;
+    --icons: 200, 75%, 8%;
+    --card: 0 0% 7%;
+    --hover: 0, 0%, 77%;
+    --buttonbg: 160, 84%, 39%;
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family:
+    "Montserrat", "Poppins", "Gotham", "Proxima Nova", Arial, sans-serif;
+}
